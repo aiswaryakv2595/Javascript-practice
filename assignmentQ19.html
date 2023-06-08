@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            const _2_5Lakh = 250000;
+            const _5lakh = 500000;
+            const _10lakh = 1000000;
+            const _50lakh = 5000000;
+            let annualIncome = parseInt(prompt('Enter your Annual Income'));
+            let incomTax=0;
+            if(annualIncome<=_2_5Lakh)
+            console.log('No tax');
+            else if(annualIncome>_2_5Lakh && annualIncome<=_5lakh){
+                incomTax=annualIncome*5/100;
+            }
+            else if(annualIncome>_5lakh && annualIncome<=_10lakh){
+                incomTax=annualIncome*20/100;
+            }
+            else if(annualIncome>_10lakh && annualIncome<=_50lakh){
+                incomTax=annualIncome*30/100;
+            }
+           console.log('income tax is '+incomTax);
+            
+        </script>
+    </body>
+</html>

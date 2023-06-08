@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let array = [];
+            let limit = parseInt(prompt('Enter the limit'));
+           let display = getArray();
+            displayArray(display);
+            function getArray(){
+                for(let i=0;i<limit;i++){
+                   array[i]=parseInt(prompt('Enter array elements')); 
+                }
+                return array;
+            }
+            function displayArray(array){
+                console.log(array);
+            }
+        </script>
+    </body>
+</html>

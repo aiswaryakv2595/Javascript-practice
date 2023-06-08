@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let array =[];
+            let limit = parseInt(prompt('Enter the size of array'));
+            for(let i=0;i<limit;i++){
+                array.push(parseInt(prompt('Enter elements')));
+              
+            }
+            console.log(array);
+           
+            let count=0;
+            array.forEach(function(i){
+                if(i%2==0)
+                count++;
+            });
+            console.log(`Number of even numbers in array is ${count}`);
+        </script>
+    </body>
+</html>

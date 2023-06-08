@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let array1 =[], array2=[];
+            let limit = parseInt(prompt('enter the limit'));
+            for(let i=0;i<limit;i++){
+           
+               array1.push(parseInt(prompt(`Array 1 \n enter element  ${i+1}`)));
+            }
+            console.log('before swap');
+            console.log(array1);
+
+            for(let i=0;i<limit;i++){
+           
+           array2.push(parseInt(prompt(`Array 2 \n enter element ${i+1}`)));
+        }
+           console.log(array2);
+           let temp;
+           for(let i=0;i<limit;i++){
+            temp=array1[i];
+            array1[i]=array2[i];
+            array2[i]=temp;
+           }
+           console.log('after swap');
+           console.log(array1);
+           console.log(array2);
+        </script>
+    </body>
+</html>

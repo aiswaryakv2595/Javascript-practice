@@ -1,0 +1,17 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let limit = parseInt(prompt('Enter the limit'));
+            let array=[];
+            for(let i=0;i<limit;i++){
+                array.push(parseInt(prompt('Enter elements')));     
+                console.log(array[i]);         
+            }
+            array.sort((a,b)=>{
+                return b-a;
+            })
+            console.log(array);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+    <head></head>
+    <body>
+      
+        <script>
+           let choice = parseInt(prompt('Enter your choice'));
+          
+          
+           class Area{
+circle(radius){
+let areacircle=3.14*radius*radius;
+console.log("Area of the circle is :"+ areacircle);
+}
+square(side){
+let areasquare=side*side;
+console.log("Area of the Square is :"+ areasquare);
+
+}
+rectangle(length,breadth){
+let arearectangle=length*breadth;
+console.log("Area of the reactangle is :"+ arearectangle);
+}
+triangle(base,height){
+let areatriangle=(1/2)*base*height;
+console.log("Area of the triangle is :"+ areatriangle);
+}
+}
+class myClass extends Area{
+choice(choice){
+switch(choice){
+case 1: this.circle();
+break;
+case 2: this.square();
+break;
+case 3: this.rectangle();
+break;
+case 4: this.triangle();
+break;
+default: alert("Invalid Entry");
+}
+}
+circle(){
+let radius=+prompt("Enter the radius of the circle :")
+super.circle(radius);
+}
+square(){
+let side=+prompt("Enter the side lenght of the square :")
+super.square(side);
+}
+rectangle(){
+let lenght=+prompt("Enter the length of the rectrangle:");
+let breadth=+prompt("Enter the breadth of the rectrangle:");
+super.rectangle(lenght,breadth);
+}
+triangle(){
+let base=+prompt("Enter the base length of the traingle :");
+let height=+prompt("Enter the height of the triangle :");
+super.triangle(base,height);
+}
+}
+let findArea=new myClass();
+  findArea.choice(choice);
+
+        </script>
+    </body>
+</html>

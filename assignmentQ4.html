@@ -1,0 +1,17 @@
+<html>
+    <head></head>
+    <body>
+        <p id="mark" style="font-size: 25px;"></p>
+        <script>
+            let mark = parseFloat(prompt('Enter your mark'));
+            if(mark>=100 ||mark<1)
+            document.getElementById('mark').innerHTML = "Invalid Entry";
+            else if(mark>=50)
+                document.getElementById('mark').innerHTML = 'Passed';
+            else
+            document.getElementById('mark').innerHTML = "Failed";
+         
+
+        </script>
+    </body>
+</html>

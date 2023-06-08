@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<button onclick="action()">Start</button>
+<script>
+function action(){
+let name=prompt("Enter car name")
+let mileage=prompt("Enter mileage")
+let max_speed=prompt("Enter maximum speed")
+let carInfo=new car(name,mileage,max_speed)
+}
+class car{
+constructor(name,mileage,max_speed){
+this.name=name;
+this.mileage=mileage;
+this.max_speed=max_speed;
+this.display();
+}
+display(){
+document.write("name:"+this.name+"<br>"+"mileage:"+this.mileage+"<br>"+"max_speed:"+this.max_speed);
+}
+}
+</script>
+</body>
+</html>

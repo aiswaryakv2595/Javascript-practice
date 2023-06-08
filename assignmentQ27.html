@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<input type="text" placeholder="Enter height" id="height">
+<button onclick="fun()">Submit</button>
+<h4 id="res"></h4>
+<script>
+function fun(){
+let
+userHeight=document.getElementById("height").value;
+try{
+if(isNaN(userHeight)){
+throw new SyntaxError("notANumberError");
+}else if(userHeight>200){
+throw new SyntaxError("HugeHeightError");
+}else if(userHeight<40){
+throw new SyntaxError("TinyHeightError");
+}else{
+document.getElementById("res").innerHTML="Valid Entry"
+}
+}catch(err){
+document.getElementById("res").innerHTML=(err.message);
+}
+}
+</script>
+</body>
+</html>

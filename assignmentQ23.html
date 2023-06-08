@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let arr1=[[],[],[]];
+
+let limit=parseInt(prompt("Enter the limit of an array"));
+getArray(limit,arr1);
+displayArray(limit,arr1);
+function getArray(limit,arr1){
+for(let i=0;i<limit;i++){
+for(j=0;j<limit;j++){
+arr1[i][j]=+prompt("Enter the array values")
+}
+}
+
+}
+
+function displayArray(limit,sum){
+document.write("Array elements are :"+"<br>")
+for(let i=0;i<limit;i++){
+for(j=0;j<limit;j++){
+document.write(arr1[i][j]+" ")
+}
+document.write("<br>")
+}
+}
+
+    
+       
+        </script>
+    </body>
+</html>

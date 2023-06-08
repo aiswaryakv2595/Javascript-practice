@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <style>
+        
+    </style>
+    <div class="bulb">
+        <span id="dis1" class="material-icons">
+            lightbulb_outline
+            </span>
+            <button id="bulbon">on</button>
+            <button id="bulboff">off</button>
+           
+    </div>
+    <script>
+   
+        let bulbon = document.getElementById('bulbon');
+        bulbon.addEventListener("click", function(){
+            let bulb= document.getElementById("dis1");
+            bulb.innerHTML = "lightbulb";
+            bulb.style.color='yellow';
+  
+});
+let bulboff = document.getElementById('bulboff');
+bulboff.addEventListener("click", function(){
+            let bulb= document.getElementById("dis1");
+            bulb.innerHTML = " lightbulb_outline";
+            bulb.style.color='black'; 
+});
+    </script>
+</body>
+</html>

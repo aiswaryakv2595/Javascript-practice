@@ -1,0 +1,50 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let choice = parseInt(prompt('Enter your choice'));
+           class MenuDriven{
+            constructor(num1,num2){
+                this.num1=num1;
+                this.num2=num2;
+            }
+             addition(){
+              return this.num1+this.num2;
+            }
+             subtraction(){
+                return this.num1-this.num2;
+            }
+             multiplication(){
+                return this.num1*this.num2;
+            }
+             division(){
+                return this.num1/this.num2;
+            }
+           }
+           let value1=parseInt(prompt('Enter first number'));
+           let value2=parseInt(prompt('Enter second number'));
+           switch(choice){
+            case 1: 
+            let sum = new MenuDriven(value1,value2);
+            console.log(`sum is ${sum.addition()}`);
+            break;
+            case 2: 
+            let difference = new MenuDriven(value1,value2);
+            console.log(`difference is ${difference.subtraction()}`);
+            break;
+            case 3: 
+            let product = new MenuDriven(value1,value2);
+            console.log(`product is ${product.multiplication()}`);
+            break;
+            case 4: 
+            let quotient = new MenuDriven(value1,value2);
+            console.log(`Quotient is ${quotient.division()}`);
+            break;
+            default: console.log('invalid entry');
+           }
+            
+            
+
+        </script>
+    </body>
+</html>

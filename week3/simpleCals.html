@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+    <body>
+        <label for="firstnumber"> First Number</label>
+        <input type="text" id="firstnumber"><br>
+        <label for="secondnumber"> Second Number</label>
+        <input type="text" id="secondnumber"><br>
+        <button id="mult">Multiplication</button>
+        <button id="divide">Divide</button>
+        <p id="result"></p>
+
+        <script>
+            let mult = document.getElementById('mult');
+            let divide = document.getElementById('divide');
+            let first = document.getElementById('firstnumber');
+            let second = document.getElementById('secondnumber');
+
+            mult.addEventListener('click',()=>{
+                let result=0;
+                result = parseFloat(first.value)*parseFloat(second.value);
+               document.getElementById('result').innerHTML ='the result is <br>'+result
+
+            })
+            divide.addEventListener('click',()=>{
+                let result=0;
+                result = parseFloat(first.value)/parseFloat(second.value);
+               document.getElementById('result').innerHTML ='the result is <br>'+result
+
+            })
+        </script>
+    </body>
+</html>

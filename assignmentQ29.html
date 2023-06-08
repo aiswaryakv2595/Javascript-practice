@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<script>
+let array=[1,2,3,4,5,6,9]
+let myFilter=(myArray, callback)=>{
+let response=callback(myArray)
+document.write(response)
+};
+let oddOrEven=(array)=>{
+let sum=0
+let evenOrOdd
+for(let i=0;i<array.length;i++){
+sum=sum+array[i]
+}
+if(sum%2==0){
+evenOrOdd=true
+}else{
+evenOrOdd=false
+}
+document.write(sum+" ")
+return evenOrOdd
+};
+myFilter(array,oddOrEven)
+</script>
+</body>
+</html>

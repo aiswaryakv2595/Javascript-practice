@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<h2 style="text-transform: uppercase;">library</h2>
+<hr>
+<h4>1. The Road Ahead</h4>
+<h4>2. Steve Jobs</h4>
+<h4>3. Mockingjay: The Final Book of the Huger Games</h4>
+<input type="number" placeholder="Enter you Choise" id="choise">
+<input type="submit" onclick="info()">
+<h1 id="res"></h1>
+<script>
+var library=[
+{
+title:'The road Ahead',
+author:'Bill Gates',
+readingStatus: true
+},
+{
+title:'Stive Jobs',
+author: 'Walter Isaacson',
+readingStatus: true
+},
+{
+title: 'Mockingjay : The Final Book of the Hunger Games',
+author: 'Suzanne Collins',
+readingStatus: false
+}
+]
+function info(){
+var choice=+document.getElementById("choise").value;
+if (choice>0 && choice<4){
+if(library[choice-1].readingStatus==true){
+let res="Already read \""+library[choice-1].title+"\"by\""+library[choice-1].author+"\""
+document.getElementById("res").innerHTML=res
+}else{
+let res="You still need to read \""+library[choice-1].title+"\"by\""+library[choice-1].author+"\""
+document.getElementById("res").innerHTML=res
+}
+}else{
+let res="Invalid Entry"
+document.getElementById("res").innerHTML=res
+}
+}
+</script>
+</body>
+</html>

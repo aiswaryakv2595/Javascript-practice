@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let limit = parseInt(prompt('Enter the limit'));
+            let array1=[];
+           
+            for(let i=0;i<limit;i++){
+                array1.push(parseInt(prompt('Enter elements of Array 1')))               
+            }
+            console.log('Array '+array1);
+           
+            let product=[];
+            for(let i=0;i<limit-1;i++){
+                product[i]=array1[i]*array1[i+1]
+            }
+            console.log('product '+product);
+        </script>
+    </body>
+</html>

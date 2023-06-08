@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body>
+        <p id="simpleInterest"></p>
+        <script>
+            let principalAmount = parseInt(prompt('Enter Principal Amount'));
+            let interestRate = parseFloat(prompt('Enter Interest Rate'));
+            let noOfYears = parseFloat(prompt('Enter number of years'));
+            const simpleInterest=((principalAmount*noOfYears*interestRate)/100);
+            document.getElementById('simpleInterest').innerText=`simple Interest is ${simpleInterest}`;
+            console.log(`principal amount:${principalAmount} interest ${interestRate} no of years ${noOfYears}`);
+           
+            console.log(simpleInterest);
+        </script>
+    </body>
+</html>
