@@ -61,5 +61,5 @@ const user=[{
   secondName:'Hari',
   age:30
 }];
-const val = user.filter((x)=>x.age<30).map(x=>x.fistName);
+const val = user.filter((x)=>x.age<30);
 console.log(val);
