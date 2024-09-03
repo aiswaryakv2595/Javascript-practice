@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>Rock <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+         Paper <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+          scissors <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+        </h1>
+    <div class="container">
+        <div class="choices">
+            <div class="choice" id="rock">
+                <img src="./images/rock.png" alt="">
+            </div>
+            <div class="choice" id="paper">
+                <img src="./images/paper.png" alt="">
+            </div>
+            <div class="choice" id="scissors">
+                <img src="./images/scissors.png" alt="">
+            </div>
+        </div>
+        <div class="score-board">
+            <div class="score">
+                <p id="user-score">0</p>
+                <p><i class="fa fa-user-o" aria-hidden="true"></i></p>
+            </div>
+            <div class="score">
+                <p id="comp-score">0</p>
+                <p><i class="fa fa-laptop" aria-hidden="true"></i></p>
+            </div>
+        </div>
+        <div class="msg-container">
+            <p id="msg">Play your move</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
